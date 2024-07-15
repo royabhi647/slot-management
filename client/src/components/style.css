@@ -1,0 +1,100 @@
+.container{
+   margin-top: 10px;
+}
+
+.timing-container{
+   display: flex;
+   align-items: center;
+}
+
+.timing{
+   display: flex;
+   align-items: center;
+   margin-top: 5px;
+}
+
+.delete-btn{
+   display: flex;
+   align-items: center;
+   height: 15px;
+   width: 15px;
+   cursor: pointer;
+   margin-left: 20px;
+}
+
+.slot-item-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 50px;
+   flex-direction: column;
+}
+
+.start-container{
+   width: 80px;
+   height: 30px;
+   border: 1px solid grey;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.mid-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 20px;
+}
+
+.end-container{
+   width: 80px;
+   height: 30px;
+   border: 1px solid grey;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 20px;
+}
+
+.active-days-header {
+   color: white;
+   background-color: black;
+   padding: 10px;
+   margin-bottom: 10px;
+   font-size: 16px;
+}
+ 
+
+@media (max-width: 768px) {
+   .timing-container, .timing, .slot-item-container {
+       flex-direction: column;
+       align-items: stretch;
+   }
+
+   .start-container, .end-container, .mid-container {
+       width: 100%;
+       margin-left: 0;
+       margin-top: 5px;
+   }
+
+   .delete-btn {
+       margin-left: auto;
+       margin-right: 10px;
+       margin-top: 5px;
+   }
+
+   .active-days-header {
+       font-size: 14px;
+   }
+}
+
+@media (max-width: 480px) {
+   .slot-item-container {
+       margin-left: 10px;
+   }
+
+   .delete-btn {
+       width: 20px;
+       height: 20px;
+   }
+}
